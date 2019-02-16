@@ -2,9 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.App {
   background-color: black;
 }
 
@@ -15,16 +12,36 @@
   height: auto;
 }
 
-.item img {
-  width: 100%;
-  height: auto;
+.logo {
+  flex: 1;
 }
 
-
+.logo img {
+  width: auto;
+  height: auto;
+}
 
 .item {
   flex: 1;
   padding-right: 2px;
   padding-left: 2px;
   padding-bottom: 0px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+
 }
