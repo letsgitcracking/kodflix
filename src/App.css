@@ -1,8 +1,30 @@
-.container {
-  text-align: center;
-  display: flex;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+.App {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 .item {
   flex: 1;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
 }
