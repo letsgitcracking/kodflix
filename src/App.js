@@ -6,13 +6,18 @@ import HaltFire from './img/haltcatchfire_cover.jpg';
 import JackRyan from './img/jackryan_cover.jpg';
 import Robot from './img/mrrobot_cover.jpg';
 import StrangerThings from './img/strangerthings_cover.jpg';
-
+import Kodflix from './img/kodflix.png'
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="container">
+          <div className="logo">
+            <img src={Kodflix} alt="Kodflix Logo" />
+          </div>
+        </div>
         <div className="container">
           <div className="item">
             <img src={HighCastle} alt="The Man in the High Castle Logo" />
@@ -29,10 +34,10 @@ class App extends Component {
             <img src={StrangerThings} alt="Stranger Things Logo" />
           </div>
           <div className="item">
-          <img src={JackRyan} alt="Jack Ryan Logo" />
+            <img src={JackRyan} alt="Jack Ryan Logo" />
           </div>
           <div className="item">
-          <img src={HaltFire} alt="Hald and Catch Fire Logo" />
+            <img src={HaltFire} alt="Hald and Catch Fire Logo" />
           </div>
         </div>
       </div>
