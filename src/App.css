@@ -12,8 +12,7 @@
   display: flex;
   text-align: center;
   width: auto;
-  height: auto;
-  color: white;
+  height: auto; 
 }
 
 .logo {
@@ -32,6 +31,7 @@
   padding-left: 2px;
   padding-bottom: 0px;
   position: relative;
+  overflow: hidden;
 }
 
 .item img {
@@ -40,17 +40,18 @@
 }
 
 .overlay{
-  display: none;
+  transition: bottom cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
-  background-color: green;
-  opacity: 0.7;
+  opacity: 0.83;
+  background-color: black;
+  color: white;
 }
 
 .item:hover .overlay {
-display: block;
+  bottom: 0;
 }
 
 
