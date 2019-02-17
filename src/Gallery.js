@@ -13,14 +13,14 @@ export default function Gallery() {
         <div>
             <Header />
             <div className="container">
-                <TVShow name="The Man in the High Castle" logo={HighCastle} />
-                <TVShow name="The Bureau" logo={Bureau} />
-                <TVShow name="Mr. Robot" logo={Robot} />
+                <TVShow id='maninthehighcastle' name="The Man in the High Castle" logo={HighCastle} />
+                <TVShow id='thebureau' name="The Bureau" logo={Bureau} />
+                <TVShow id='mrrobot' name="Mr. Robot" logo={Robot} />
             </div>
             <div className="container">
-                <TVShow name="Stranger Things" logo={StrangerThings} />
-                <TVShow name="Jack Ryan" logo={JackRyan} />
-                <TVShow name="Halt and Catch Fire" logo={HaltFire} />
+                <TVShow id='strangerthings' name="Stranger Things" logo={StrangerThings} />
+                <TVShow id='jackryan' name="Jack Ryan" logo={JackRyan} />
+                <TVShow id='haltandcatchfire' name="Halt and Catch Fire" logo={HaltFire} />
             </div>
         </div>
     )
