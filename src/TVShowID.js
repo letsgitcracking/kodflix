@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Details.css';
+import './TVShowID.css';
+import getTVShows from './tvshows-get';
 
-export default class Details extends Component {
+export default class TVShowID extends Component {
 
     constructor() {
         super();
         this.state = {
-            welcomeMessage: 'Hello, this will be the details page for each Movie & TV show :)'
+            TVShow: {}
         };
     }
 
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                welcomeMessage: 'Coming soon! :)'
-            });
-        }, 3000);
+        let TVShowID = this.props.match.params.TVShowID;
+        let TVShow = getTVShows().find(show => show.id === TVShowID);
+        this.setState({ TVShow });
     }
 
     render() {
         return (
             <div>
                 <br />
-                <h1>{this.state.welcomeMessage}</h1>
+                <h1>{this.state.TVShow.name}</h1>
                 <Link to='/'>Back to home page</Link>
             </div>
         )
