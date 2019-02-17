@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import TVShow from './TVShow';
 import Bureau from './img/thebureau_cover.jpg';
 import HighCastle from './img/manhighcastle_cover.jpg';
 import HaltFire from './img/haltcatchfire_cover.jpg';
@@ -19,44 +20,14 @@ class App extends Component {
           </div>
         </div>
         <div className="container">
-          <div className="item">
-            <img src={HighCastle} alt="The Man in the High Castle Logo" />
-            <div className="overlay">
-              <h1>The Man In The High Castle</h1>
-            </div>
-          </div>
-          <div className="item">
-            <img src={Bureau} alt="The Bureau Logo" />
-            <div className="overlay">
-              <h1>The Bureau</h1>
-            </div>
-          </div>
-          <div className="item">
-            <img src={Robot} alt="Mr. Robot Logo" />
-            <div className="overlay">
-              <h1>Mr. Robot</h1>
-            </div>
-          </div>
+          <TVShow name="The Man in the High Castle" logo={HighCastle} />
+          <TVShow name="The Bureau" logo={Bureau} />
+          <TVShow name="Mr. Robot" logo={Robot} />
         </div>
         <div className="container">
-          <div className="item">
-            <img src={StrangerThings} alt="Stranger Things Logo" />
-            <div className="overlay">
-              <h1>Stranger Things</h1>
-            </div>
-          </div>
-          <div className="item">
-            <img src={JackRyan} alt="Jack Ryan Logo" />
-            <div className="overlay">
-              <h1>Jack Ryan</h1>
-            </div>
-          </div>
-          <div className="item">
-            <img src={HaltFire} alt="Halt and Catch Fire Logo" />
-            <div className="overlay">
-              <h1>Halt and Catch Fire</h1>
-            </div>
-          </div>
+          <TVShow name="Stranger Things" logo={StrangerThings} />
+          <TVShow name="Jack Ryan" logo={JackRyan} />
+          <TVShow name="Halt and Catch Fire" logo={HaltFire} />
         </div>
       </div>
     );
