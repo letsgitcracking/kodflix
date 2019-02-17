@@ -1,13 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; 
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Details.css';
 
-export default function Details() {
-    return (
-        <div>
-            <br />
-            <h1>Welcome to the details page - WIP!</h1>
-            <Link to='/'>Back to home page</Link>
-        </div>
-    )
+export default class Details extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            welcomeMessage: 'Hello, this will be the details page for each Movie & TV show :)'
+        };
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                welcomeMessage: 'Coming soon! :)'
+            });
+        }, 3000);
+    }
+
+    render() {
+        return (
+            <div>
+                <br />
+                <h1>{this.state.welcomeMessage}</h1>
+                <Link to='/'>Back to home page</Link>
+            </div>
+        )
+    }
+
 }
