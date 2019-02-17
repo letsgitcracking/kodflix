@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Gallery from './Gallery';
-import Kodflix from './img/kodflix.png'
-
+import Header from './Header'
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="container">
-          <div className="logo">
-            <img src={Kodflix} alt="Kodflix Logo" />
-          </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Gallery />
         </div>
-        <Gallery />
-      </div>
+      </Router>
     );
   }
 }
