@@ -10,15 +10,17 @@
 }
  
 .container {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   text-align: center;
-  width: auto;
+  width: 100%;
   height: auto; 
 }
 
 .logo {
   flex: 1;
-  padding: 10px;
 }
 
 .logo img {
@@ -27,14 +29,11 @@
 }
 
 .item {
-  flex: 1;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-bottom: 0px;
+  /* flex: 1;
+  flex-basis: 300px; */
   position: relative;
   overflow: hidden;
 }
-
 .item img {
   width: 100%;
   height: auto;
@@ -57,9 +56,9 @@
 
 
 @media only screen and (max-width: 600px) {
-  .container {
+  /* .container {
     flex-direction: column;
-  }
+  } */
 
   .logo img {
     width: 100%;
