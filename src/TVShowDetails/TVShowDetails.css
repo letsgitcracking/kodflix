@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+.content {
+    display: inline-flex;
+}
+
+.content img {
+    width: 50%;
+    height: 100%;
+    padding: 10px 2px 10px 2px;
+
+}
+
+.synopsis {
+    padding: 10px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .content{
+    flex-direction: column;
+    }
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+}
