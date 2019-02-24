@@ -17,6 +17,7 @@ body {
 .synopsis {
     padding: 10px;
     text-align: justify;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
