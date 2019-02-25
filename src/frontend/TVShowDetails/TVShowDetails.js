@@ -16,6 +16,14 @@ export default class TVShowDetails extends Component {
         let TVShowDetails = this.props.match.params.TVShowDetails;
         let TVShow = getTVShows().find(show => show.id === TVShowDetails);
         this.setState({ TVShow });
+
+        fetch('/rest/shows-list')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                console.log(JSON.stringify(myJson));
+            });
     }
 
     render() {
