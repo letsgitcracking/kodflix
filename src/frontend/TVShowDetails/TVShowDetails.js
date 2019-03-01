@@ -18,11 +18,9 @@ export default class TVShowDetails extends Component {
         this.setState({ TVShow });
 
         fetch('/rest/shows-list')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (myJson) {
-                console.log(JSON.stringify(myJson));
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
             });
     }
 
