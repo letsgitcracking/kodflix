@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getTVShows from '../tvshows-get';
+import getTVShows from '../../backend/shows-list';
 import './TVShowDetails.css';
 
 export default class TVShowDetails extends Component {
